@@ -6,7 +6,7 @@ from datetime import datetime, timezone
 
 
 def index(request):
-    return HttpResponse("Hello, world. You're at the gallery index.")
+    return HttpResponse("Hello, world. You're at the recipe index.")
 
 def main(request):
     # category = Category.objects.create(
