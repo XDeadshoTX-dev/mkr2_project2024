@@ -37,12 +37,14 @@ def main(request):
         }
     )
 
-def recipe_detail(request):
+def recipe_detail(request, id):
+    recipe = Recipe.objects.get(id=id)
     return render(
         request,
         'recipe_detail.html',
         {
             'title': 'Home Page',
             'year': datetime.now().year,
+            'recipe': recipe,
         }
     )
