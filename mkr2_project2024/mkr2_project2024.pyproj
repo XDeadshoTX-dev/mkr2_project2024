@@ -47,6 +47,9 @@
     <Compile Include="recipe\__init__.py" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include=".env">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="recipe\templates\category_list.html" />
     <Content Include="recipe\templates\main.html" />
     <Content Include="recipe\templates\recipe_detail.html" />
