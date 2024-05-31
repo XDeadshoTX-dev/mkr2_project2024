@@ -10,9 +10,11 @@ def index(request):
 
 def main(request):
     category = Category.objects.create(
-            name="For Ananas",
+            name="For Pineapple",
         )
     category.save()
+    category = Category.objects.all()
+    q = len(category)
     # recipe = Recipe.objects.create(
     #         title="Recept 1",
     #         description="Desc for 1",
